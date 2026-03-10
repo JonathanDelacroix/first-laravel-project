@@ -3,7 +3,7 @@
 @section('content')
     <h2>Bienvenue sur le site de {{ $name }}</h2>
     <h3>Articles</h3>
-    <x-article titre="L’IA soigne mieux" description="L’intelligence artificielle aide les médecins à diagnostiquer plus vite." />
-    <x-article titre="Villes vertes" description="Les métropoles deviennent plus écologiques et durables." />
-    <x-article titre="Télétravail" description="Plus de liberté, mais aussi plus de solitude." />
+    @foreach ($articles as $article)
+        <x-article :titre="$article['titre']" :description="$article['description']" />
+    @endforeach
 @endsection
