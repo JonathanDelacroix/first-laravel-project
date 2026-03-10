@@ -6,8 +6,7 @@
     @foreach ($articles as $article)
         @if ($loop->last)
             @break
-        @else
-            <x-article :titre="$article['titre']" :description="$article['description']" />
         @endif
+        <x-article :titre="$article['titre']" :description="$article['description']" />
     @endforeach
 @endsection
