@@ -5,6 +5,7 @@
         <title>@yield('title')</title>
     </head>
     <body>
+        <img src="{{ asset('favicon.png') }}" alt="Logo">
         @include('partials.header')
         <main>
             @yield('content')
