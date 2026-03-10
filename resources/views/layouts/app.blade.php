@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>@yield('title')</title>
-        <link rel="icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
+        <link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">
     </head>
     <body>
         @include('partials.header')
