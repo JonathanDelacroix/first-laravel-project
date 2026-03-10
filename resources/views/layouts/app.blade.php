@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>@yield('title')</title>
+        <link href="{{ asset('favicon.png') }}">
     </head>
     <body>
-        <img src="{{ asset('favicon.png') }}" alt="Logo">
         @include('partials.header')
         <main>
             @yield('content')
