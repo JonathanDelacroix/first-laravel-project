@@ -7,7 +7,7 @@
         @if ($loop->last)
             @break
         @endif
-        <x-article :titre="$article['titre']" :description="Str::limit($article['description'], 30, '...')" />
+        <x-article :titre="$article['titre']" :description="Str::limit($article['description'], 30)" />
 
     @endforeach
 @endsection
