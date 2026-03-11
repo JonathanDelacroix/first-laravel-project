@@ -3,6 +3,8 @@
 @section('title', 'Article ' . $article->id)
 
 @section('content')
-    <h2>{{ $article->title }}</h2>
-    <p>{{ $article->description }}</p>
+    <x-article 
+        :title="$article->titre"
+        :description="$article->description"
+    />
 @endsection

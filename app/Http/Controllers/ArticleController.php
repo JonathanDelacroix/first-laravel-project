@@ -13,7 +13,7 @@ class ArticleController extends Controller
         return view('pages.article-details', compact('article'));
     }
 
-    public function creer()
+    public function create()
     {
         Article::create([
             'title' => "L’IA soigne mieux",
@@ -33,7 +33,7 @@ class ArticleController extends Controller
         return "3 articles créés avec succès !";
     }
 
-    public function modifier($id)
+    public function update($id)
     {
         $article = Article::find($id);
 
@@ -48,7 +48,7 @@ class ArticleController extends Controller
         return "Article #{$id} modifié avec succès !";
     }
 
-    public function supprimer($id)
+    public function delete($id)
     {
         $article = Article::find($id);
 
