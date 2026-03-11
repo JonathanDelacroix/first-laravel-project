@@ -7,7 +7,11 @@
         @if ($loop->last)
             @break
         @endif
-        <x-article :titre="$article['titre']" :description="Str::limit($article['description'], 30)" />
-
+        <a href="{{ route('article.details', ['id' => $article->id]) }}">
+            <x-article
+                :title="$article['title']"
+                :description="Str::limit($article['description'], 30)"
+            />
+        </a>
     @endforeach
 @endsection

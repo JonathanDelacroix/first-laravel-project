@@ -6,12 +6,12 @@ use Illuminate\View\Component;
 
 class Article extends Component
 {
-    public $titre;
+    public $title;
     public $description;
 
-    public function __construct($titre, $description)
+    public function __construct($title, $description)
     {
-        $this->titre = $titre;
+        $this->title = $title;
         $this->description = $description;
     }
 
